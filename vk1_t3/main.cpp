@@ -40,7 +40,6 @@ int game(int maxnum)
         if(arvaus == satunnaisluku){
             game = 0;
             cout << "Oikein!" << endl;
-            arvaukset -= 1;
         }
     }
     return arvaukset;
