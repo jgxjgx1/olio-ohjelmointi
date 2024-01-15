@@ -18,7 +18,7 @@ void peli()
     int satunnaisluku;
     int arvaus;
 
-    srand(42); // Asetetaan siemenluku
+    srand(time(0)); // Asetetaan siemenluku
     satunnaisluku = rand() % 20 + 1; // Satunnaisluku väliltä 0-19 +1 => väli 1-20
 
     while(game == 1){
