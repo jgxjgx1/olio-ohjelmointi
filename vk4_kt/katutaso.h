@@ -1,9 +1,9 @@
 #ifndef KATUTASO_H
 #define KATUTASO_H
 
-#include "kerros.h"
+#include "asunto.h"
 
-class Katutaso : public Kerros
+class Katutaso
 {
 public:
   Katutaso() {
@@ -13,7 +13,11 @@ public:
   }
 
   void maaritaAsunnot();
-  double laskeKulutus(double perusKulutus) override;
+  double laskeKulutus(double perusKulutus);
+
+private:
+  Asunto as1;
+  Asunto as2;
 };
 
 #endif // KATUTASO_H
